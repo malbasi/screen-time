@@ -25,7 +25,7 @@ var xPositionScale = d3
 
 var yPositionScale = d3
   .scaleLinear()
-  .domain([0, 1000])
+  .domain([0, 400])
   .range([height, 0])
 
 // var div = d3
@@ -39,18 +39,8 @@ d3.csv(require('./data/daily-info.csv'))
   .catch(err => console.log('Failed on', err))
 
 function ready (datapoints) {
-  var nested = d3
-    .nest()
-    .key(d => d.weekday)
-    .entries(datapoints)
-
   var weekdayName = datapoints.map(d => d['weekday'])
   xPositionScale.domain(weekdayName)
-
-  // var dailyTime = datapoints.map(d => {
-  //   return +d.daily_time
-  // })
-  // yPositionScale.domain(dailyTime)
 
   /* Set up axes */
   var xAxis = d3
@@ -84,18 +74,17 @@ function ready (datapoints) {
 
   svg
     .selectAll('.usePerDay')
-    .data(nested)
+    .data(datapoints)
     .enter()
     .append('rect')
     .attr('class', 'usePerDay')
-    .attr('height', 5)
+    .attr('height', 10)
     .attr('width', xPositionScale.bandwidth())
     .attr('x', d => {
-      return xPositionScale(d.values[0].weekday)
+      return xPositionScale(d.weekday)
     })
     .attr('y', d => {
-      console.log(d.values[0].daily_time)
-      return yPositionScale(d.values[0].daily_time)
+      return yPositionScale(d.daily_time)
     })
     .attr('fill', 'black')
     .attr('opacity', 0.3)
