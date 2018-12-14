@@ -1,0 +1,41 @@
+name,weekday,daily_time,pickups,notifications
+Matt,saturday,119,70,47
+Matt,sunday ,114,68,48
+Matt,monday,145,92,87
+Matt,tuesday ,282,101,100
+Matt,wednesday,136,72,76
+Matt,thursday,124,128,137
+Matt,friday,171,93,52
+Suri,saturday,189,80,50
+Suri,sunday ,171,36,51
+Suri,monday,198,52,65
+Suri,tuesday ,92,46,79
+Suri,wednesday,168,53,76
+Suri,thursday,230,56,83
+Suri,friday,173,69,60
+Angela,saturday,117,54,138
+Angela,sunday ,152,49,134
+Angela,monday,107,111,155
+Angela,tuesday ,116,86,82
+Angela,wednesday,155,58,141
+Angela,thursday,195,68,168
+Angela,friday,82,66,102
+Paivi,wednesday,204,82,84
+Paivi,thursday,282,81,64
+Paivi,friday,99,100,91
+Paivi,saturday,243,81,50
+Paivi,sunday ,234,62,45
+Paivi,monday,171,105,75
+Paivi,tuesday ,182,60,65
+Max,thursday,43,27,40
+Max,friday,58,31,34
+Max,saturday,78,23,28
+Max,sunday ,154,53,79
+Max,monday,63,50,102
+Max,tuesday ,128,62,72
+Edward,thursday,348,59,119
+Edward,friday,349,67,138
+Edward,saturday,196,86,172
+Edward,sunday ,247,70,117
+Edward,monday,126,61,87
+Edward,tuesday ,256,42,91
